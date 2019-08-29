@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/home';
 import Users from './pages/users';
+import UserInfo from './pages/userInfo';
+
 
 
 class App extends Component {
@@ -10,7 +12,12 @@ class App extends Component {
       <Router>
         <div>
         <Route exact path='/' component={Home} />
-        <Route path='/users' component={Users} />
+        <Switch>
+          <Route path='/users/:id' component={UserInfo} />
+          <Route path='/users' component={Users} />
+        </Switch>
+        
+       
         </div>
       </Router>
     )

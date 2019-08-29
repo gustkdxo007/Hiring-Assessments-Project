@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Home = ({history}) => {
+const Home = () => {
     return (
         <div>
             <h1>어플리케이션을 골라주세요</h1>
-            <button onClick={() => {history.push('/users')}}>투두</button>
-            <button onClick={() => {history.push('/board')}}>게시판</button>
+            <Link to='users'><button>투두</button></Link>
+            <Link to='board'><button>게시판</button></Link>
         </div>
     );
 };

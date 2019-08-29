@@ -1,18 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import GetUsers from '../components/getUsers';
 
 
-const Users = ({history}) => {
-    
+const Users = () => {
     return (
         <div>
             <div>
-                <button onClick={() => {history.push('/')}}>home</button>
+                <Link to='/'><button>home</button></Link>
             </div>
             
-            <select name='usersList' size='7'>
-                <option value='' defaultValue>유저 리스트</option>
-            </select>
+           <ul>
+               <h2>유저리스트</h2>
+           </ul>
             <GetUsers />
         </div>
     );
