@@ -11,8 +11,8 @@ const Users = () => {
             </div>
             
            <ul className='users-box'>
-               <h2 className='users-list'>유저리스트</h2>
-               <GetUsers className='users-user'/>
+                <h2 className='users-list'>유저리스트</h2>
+                <GetUsers className='users-user'/>
            </ul>
             
         </div>
