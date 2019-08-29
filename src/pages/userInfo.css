@@ -1,0 +1,11 @@
+.userInfo-btn {
+    width: 200px;
+    height: 50px;
+}
+
+.userInfo-display {
+    border: 1px solid;
+    text-align: center;
+    width: 400px;
+}
+

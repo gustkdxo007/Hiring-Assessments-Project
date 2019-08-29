@@ -8,6 +8,7 @@ const Users = () => {
         <div>
             <div>
                 <Link to='/'><button className='users-btn'>home</button></Link>
+                <Link to='/'><button className='users-btn'>뒤로가기</button></Link>
             </div>
             
            <ul className='users-box'>
