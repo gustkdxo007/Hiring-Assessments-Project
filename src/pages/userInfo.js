@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
-const userUrl = 'http://koreanjson.com/users/';
+const userUrl = 'http://127.0.0.1:3001/users/';
 
 class UserInfo extends Component {
     constructor(props) {
@@ -29,6 +30,8 @@ class UserInfo extends Component {
         return (
             <div>
                 <div>
+                    <Link to='/'><button>home</button></Link>
+                    <Link to='/users'><button>뒤로가기</button></Link>
                     <div>
                         <img src={`https://randomuser.me/api/portraits/men/${id}.jpg`} alt={name} />
                     </div>

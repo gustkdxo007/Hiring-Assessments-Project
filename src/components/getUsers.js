@@ -4,7 +4,7 @@ import User from './user';
 
 
 
-const userurl = 'http://koreanjson.com'
+const userurl = 'http://127.0.0.1:3001'
 
 class GetUsers extends Component {
     constructor(props) {
@@ -27,7 +27,6 @@ class GetUsers extends Component {
         const { users } = this.state;
         return (
         users.map(user => <User key={user.id} user={user} />)
-        
         );
     }
 }

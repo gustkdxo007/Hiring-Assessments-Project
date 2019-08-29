@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/home';
 import Users from './pages/users';
 import UserInfo from './pages/userInfo';
+import Board from './pages/board';
 
 
 
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route path='/users/:id' component={UserInfo} />
           <Route path='/users' component={Users} />
+          <Route path='/board' component={Board} />
         </Switch>
         
        
